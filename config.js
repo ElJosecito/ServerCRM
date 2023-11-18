@@ -4,8 +4,8 @@ const config = {
         host: 'http://localhost'
     },
     dbConfig : {
-        host: 'localhost',
-        port: 27017,
+        host: 'admin',
+        port: 'admin@cluster0.p83r8mu.mongodb.net',
         name: 'CRMdb'
     }
 }

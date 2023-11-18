@@ -6,7 +6,7 @@ const config = require('./config');
 
 //import mongoose
 const mongoose = require('mongoose');
-mongoose.connect(`mongodb://${config.dbConfig.host}:${config.dbConfig.port}/${config.dbConfig.name}`);
+mongoose.connect(`mongodb+srv://${config.dbConfig.host}:${config.dbConfig.port}/${config.dbConfig.name}`);
 const db = mongoose.connection;
 
 //db connection error handling

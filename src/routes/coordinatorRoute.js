@@ -69,7 +69,7 @@ router.post('/addCoordinator', async (req, res) => {
         });
 
         const coordinatorSaved = await newCoordinator.save();
-        res.json(coordinatorSaved);
+        res.json({"status": "success", "data": coordinatorSaved})
         console.log("Coordinator added successfully!");
     } catch (error) {
         console.log("Error: ", error);
